@@ -1,0 +1,3 @@
+<?php
+
+$captcha = json_decode( send_post( "https://www.google.com/recaptcha/api/siteverify", "secret=KEY&response=" . $_POST["g-recaptcha-response"] ), true );

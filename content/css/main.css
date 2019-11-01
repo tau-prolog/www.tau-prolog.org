@@ -1,0 +1,408 @@
+
+/** GENERAL */
+
+body {
+	background-color: #222222;
+}
+
+h1 { font-size: 80px !important; }
+h2 { font-size: 40px !important; }
+h3 { font-size: 30px !important; }
+h4 { font-size: 25px !important; }
+
+h1, h2, h3, h4 {
+	font-weight: bold;
+	font-family: "Source Sans Pro";
+}
+
+a {
+	color: #442178;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #442178;
+	text-decoration: underline;
+}
+
+a.link-broken {
+	color: red;
+}
+
+pre code {
+	border: 3px solid #333333;
+	border-radius: 0 !important;
+	border-left: 10px solid #333333;
+	padding: 10px;
+}
+
+.look-code {
+	border: 3px solid #000000;
+	border-left: 10px solid #000000;
+	font-family: 'Inconsolata', monospace, courier, serif;
+	font-size: 20px;
+	white-space: pre;
+	display: block;
+	unicode-bidi: embed;
+	padding: 10px;
+	margin-left: 5px;
+	overflow-x: auto;
+}
+
+#navigation {
+	background-color: #ffffff;
+}
+
+#navigation a {
+	color: #555555;
+	font-size: 130%;
+	text-decoration: underline;
+	position: relative;
+	top: 5px;
+}
+
+#navigation a:hover {
+	color: #555555;
+	text-decoration: underline;
+}
+
+#navigation-link-sandbox {
+	color: #ffffff !important;
+	text-decoration: none !important;
+	top: 0 !important;
+}
+
+#navigation-logo {
+	background: transparent url("../img/logo/navigation-tau.png") left center no-repeat;
+	height: 48px;
+	width: 48px;
+	position: relative;
+	top: 0px !important;
+}
+
+#footer {
+	background-color: #222222;
+	color: #ffffff;
+}
+
+#footer a {
+	color: #ffd45e;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	color: #ffd45e;
+	text-decoration: underline;
+}
+
+#footer-line {
+	background-color: #ffffff;
+	height: 3px;
+	margin-top: 50px;
+}
+
+#footer-logo {
+	background: #222222 url("../img/logo/footer-tau.png") center center no-repeat;
+	height: 48px;
+	margin: 0px auto;
+	position: relative;
+	top: -24px;
+	width: 90px;
+}
+
+#footer-copy {
+	position: relative;
+	top: -40px;
+	margin-bottom: -40px;
+}
+
+.inline-code {
+	background-color: #efefef;
+	border: 1px solid #dfdfdf;
+	border-radius: 2px;
+	font-family: 'Inconsolata', monospace, courier, serif;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 0px 5px;
+}
+
+.hljs {
+	background-color: #f5f5f5;
+	border-radius: 5px;
+	font-family: 'Inconsolata', monospace, courier, serif;
+	font-size: 20px;
+}
+
+.purple {
+	background-color: #4e3d58;
+	color: #ffffff;
+}
+
+.purple .text-color {
+	color: #c14566;
+}
+
+.purple .header-line {
+	background-color: #c14566;
+}
+
+.purple code, .purple a, .purple a:hover, .purple .text-muted {
+	color: #ffd45e !important;
+}
+
+.purple .btn {
+	background-color: #c14566;
+	color: #ffffff !important;
+}
+
+.purple .btn:hover {
+	background-color: #b12a4e;
+	color: #ffffff;
+}
+
+.purple.card {
+	border: 5px solid #4e3d58;
+	border-radius: 0 !important;
+}
+
+.white {
+	background-color: #ffffff;
+}
+
+.white .text-color {
+	color: #ffd45e;
+}
+
+.white .header-line {
+	background-color: #ffd45e;
+}
+
+.white a, .white a:hover {
+	color: #4e3d58;
+}
+
+.white .btn {
+	background-color: #ffd45e;
+	border: 3px solid #ffd45e;
+	color: #000000 !important;
+}
+
+.white .btn:hover {
+	background-color: #ffd45e;
+	border: 3px solid #000000;
+	color: #000000 !important;
+}
+
+.pink {
+	background-color: #c14566;
+	color: #ffffff;
+}
+
+.pink .text-color {
+	color: #4e3d58;
+}
+
+.pink .header-line {
+	background-color: #4e3d58;
+}
+
+.pink a, .pink a:hover, .pink code {
+	color: #ffd45e;
+}
+
+.pink .btn {
+	background-color: #4e3d58;
+	color: #ffffff;
+}
+
+.pink .btn:hover {
+	background-color: #432d50;
+	color: #ffffff;
+}
+
+.pink .look-code {
+	background-color: #993e56;
+}
+
+.yellow {
+	background-color: #ffd45e;
+	color: #000000;
+}
+
+.yellow * {
+	border-color: #000000 !important;
+}
+
+.yellow .text-color {
+	color: #ffd45e;
+}
+
+.yellow a, .yellow a:hover {
+	color: #94304b;
+}
+
+.yellow .btn {
+	background-color: #c14566;
+	color: #ffffff;
+	border: 3px solid #ffd45e;
+}
+
+.yellow .btn:hover {
+	background-color: #c14566;
+	color: #ffffff;
+	border: 3px solid #000000;
+}
+
+.yellow .look-code {
+	background-color: #ffdd80;
+}
+
+.gray {
+	background-color: #333333;
+	color: #ffffff;
+}
+
+.gray .text-color {
+	color: #ffd45e;
+}
+
+.gray a, .pink a:hover {
+	color: #ffd45e;
+}
+
+.gray .btn {
+	background-color: #ffd45e;
+	color: #000000;
+	border: 3px solid #ffffff;
+}
+
+.gray .btn:hover {
+	background-color: #ffd45e;
+	color: #000000;
+	border: 3px solid #000000;
+}
+
+
+
+/** MAIN */
+
+#home-get-started, #home-version {
+	font-size: 200%;
+	clear: right;
+}
+
+#try-program {
+	background: transparent url("../img/black.png") left top repeat;
+	border: 3px solid #c14566 !important;
+	color: #ffffff;
+	font-family: 'Inconsolata', monospace, courier, serif;
+	font-size: 20px;
+	height: 155px;
+	padding: 10px;
+	resize: none !important;
+}
+
+#try-goal {
+	background: transparent url("../img/try-prompt.png") left 10px no-repeat;
+	border: none !important;
+	color: #ffffff;
+	font-family: 'Inconsolata', monospace, courier, serif;
+	font-size: 20px;
+	height: 33px;
+	padding: 0px;
+	padding-left: 0px;
+	padding-left: 20px;
+}
+
+.try-answer {
+	background: transparent url("../img/black.png") left top repeat;
+	font-family: 'Inconsolata', monospace, courier, serif;
+	font-size: 20px;
+	padding: 10px;
+}
+
+.try-sep {
+	background-color: #c14566;
+	height: 3px;
+}
+
+.home-features-icon {
+	font-size: 70px;
+}
+
+#home-who-uses a {
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: block;
+	opacity: 0.4;
+	height: 128px;
+}
+
+#home-who-uses a:hover {
+	opacity: 1.0;
+}
+
+#home-who-floper {
+	background-image: url("../img/who/floper2.png");
+}
+
+#home-who-klipse {
+	background-image: url("../img/who/klipse2.png");
+}
+
+#home-who-prologhub {
+	background-image: url("../img/who/prologhub.png");
+}
+
+
+
+/** PREDICATE */
+
+.predicate-template-name { color: #00005d; }
+.predicate-template-paren { color: #464698; font-weight: bold; }
+.predicate-template-argument-plus { color: #7b0a0a; }
+.predicate-template-argument-query { color: #9b4e01; }
+.predicate-template-argument-minus { color: #085f06; }
+.predicate-template-argument-arroba { color: #5a005d; }
+.predicate-template-argument-dots { color: #3e7770; }
+.predicate-template-argument-generic { color: #00005d; }
+
+
+
+/** MANUAL */
+
+.manual-warning {
+	background-color: #ffdd80;
+	border: 3px solid #000000;
+	border-left: 10px solid #000000;
+	display: block;
+	padding: 10px;
+}
+
+
+
+/**   DOCUMENTATION  */
+
+.doc-table {
+	border: 5px solid #442178;
+	border-top: none !important;
+	border-collapse: collapse;
+}
+
+.doc-table td {
+	padding: 10px;
+}
+
+.doc-table tr:nth-child(even) { background-color: #ffffff; }
+.doc-table tr:nth-child(odd) { background-color: #efefef; }
+
+.doc-table-header {
+	background-color: #442178 !important;
+	color: #ffffff;
+	font-weight: bold;
+	text-align: center;
+}
+
+#doc-table-statistics tr > td:first-child {
+	font-weight: bold;
+}
