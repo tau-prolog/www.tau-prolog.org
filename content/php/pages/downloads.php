@@ -35,7 +35,7 @@ foreach(query_modules() as $module) {
     <div class="container">
 		<h2 class="mb-4">Installation using the npm registry</h2>
 		<p>You can install Tau Prolog from <a href="https://www.npmjs.com/" target="_blank">npm</a>, which is common practice when using <a href="https://nodejs.org/en/" target="_blank">Node.js</a>:</p>
-		<div class="home-brief-look-code">$ npm install tau-prolog</div>
+		<div class="look-code">$ npm install tau-prolog</div>
     </div>
 </div>
 
