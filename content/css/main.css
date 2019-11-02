@@ -33,6 +33,7 @@ pre code {
 	border: 3px solid #333333;
 	border-radius: 0 !important;
 	border-left: 10px solid #333333;
+	color: #333333 !important;
 	padding: 10px;
 }
 
@@ -146,7 +147,11 @@ pre code {
 	background-color: #c14566;
 }
 
-.purple code, .purple a, .purple a:hover, .purple .text-muted {
+.purple code, .purple .text-muted {
+	color: #ffd45e;
+}
+
+.purple a, .purple a:hover {
 	color: #ffd45e !important;
 }
 

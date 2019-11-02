@@ -46,3 +46,11 @@ foreach( $examples as $example ) {
 </div>
 
 <?php } ?>
+
+<div class="purple container-fluid py-5">
+    <div class="container">
+        <h2 class="mb-4">Implementation</h2>
+		<pre class="highlight"><code id="code-implementation"></code></pre>
+		<script type="text/javascript"><?php echo "show_implementation( '$slug', '$predicate/$arity' );"; ?></script>
+    </div>
+</div>
