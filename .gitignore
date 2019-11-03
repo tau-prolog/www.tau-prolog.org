@@ -9,7 +9,7 @@ code/
 content/img/
 content/php/PHPMailer
 content/php/mysql.php
-content/php/recaptcha.php
+content/php/credentials.php
 content/js/codemirror/*
 !content/js/codemirror/theme/
 !content/js/codemirror/mode/
