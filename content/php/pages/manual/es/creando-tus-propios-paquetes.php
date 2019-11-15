@@ -101,6 +101,24 @@ console.log(session.compile());
 	}
 }</code></pre>
 		<p>Para eso se utiliza la función <code>Thread.prototype.success</code>, que añade al principio de la pila de puntos de elección un nuevo estado donde el átomo seleccionado es eliminado. Esto mismo se puede lograr insertando un estado con la función <code>prepend</code>, reemplazando el átomo seleccionado del objetivo por <code>null</code>, y dejando la sustitución sin modificar.</p>
-		<p class="manual-warning"><b>Nota</b>: Es importante que las funciones que implementan estos predicados no devuelvan nigún valor. Como veremos más adelante, el hecho de devolver un valor que se evalua a <code>true</code> en lugar de <code>undefined</code> le indicaría a Tau Prolog que la función es asíncrona.</p>
+		<p class="manual-warning"><b>Nota</b>: Es importante que las funciones que implementan estos predicados no devuelvan nigún valor. Como veremos más adelante, el hecho de devolver un valor que se evalue a <code>true</code> en lugar de <code>undefined</code> le indicaría a Tau Prolog que la función es asíncrona. <b>Para que un predicado NO tenga éxito, basta con no insertar ningún estado nuevo en la pila de puntos de elección.</b></p>
+
+		<h2 id="predicados-asincronos" class="mt-5"><a href="#predicados-asincronos">Definición de predicados asíncronos</a></h2>
+		<p>Algunos predicados implementados como funciones de JavaScript requieren el uso de funciones asíncronas. Por ejemplo, la siguiente función <code>sleep/1</code> del módulo <code>system</code> de Tau Prolog duerme el hilo de ejecución durante unos segundos.</p>
+<pre class="highlight javascript highlight-javascript"><code>"sleep/1": function( thread, point, atom ) {
+	var time = atom.args[0];
+	if( pl.type.is_variable( time ) ) {
+		thread.throw_error( pl.error.instantiation( thread.level ) );
+	} else if( !pl.type.is_integer( time ) ) {
+		thread.throw_error( pl.error.type( "integer", time, thread.level ) );
+	} else {
+		setTimeout( function() {
+			thread.success( point );
+			thread.again();
+		}, time.value );
+		return true;
+	}
+}</code></pre>
+		<p>Si no hay ningún error, el predicado <code>sleep/1</code> utiliza la función <code>setTimeout</code> para realizar una acción al pasar unos segundos, y devuelve el valor <code>true</code> (sólo en el caso de que la función vaya a tener éxito). Esto le indica a Tau Prolog que se ha ejecutado un predicado asíncrono, y que no debe seguir aplicando pasos de resolución, ya que el propio predicado volverá a reactivar el proceso de inferencia en algún momento. En el caso de <code>sleep/1</code>, tras pasar unos segundos se inserta un nuevo punto de elección en la pila, y se invoca al método <code>Thread.prototype.again</code> para que la inferencia se reanude.</p>
 	</div>
 </div>
