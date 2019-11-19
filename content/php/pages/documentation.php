@@ -133,6 +133,7 @@ foreach( $predicates as $slug => $package ) {
             <li class="mb-2 p-2 border"><i class="fas fa-asterisk mr-2"></i><a target="_blank" href="http://www.deransart.fr/prolog/bips.html" class="font-weight-bold">ISO directives, control constructs and builtins</a> by <span class="font-weight-bold">J. P. E. Hodgson</span></li>
             <li class="mb-2 p-2 border"><i class="fas fa-asterisk mr-2"></i> <a target="_blank" href="http://www.complang.tuwien.ac.at/ulrich/iso-prolog/conformity_testing" class="font-weight-bold">ISO Prolog Conformity Testing</a> by <span class="font-weight-bold">U. Neumerkel</span></li>
             <li class="mb-2 p-2 border"><i class="fas fa-asterisk mr-2"></i> <a target="_blank" href="/files/doc/dcgsdin140324JPEH.pdf" class="font-weight-bold">ISO/IEC DTR 13211-3:2006 Definite clause grammar rules</a> by <span class="font-weight-bold">P. Moura</span></li>
+            <li class="mb-2 p-2 border"><i class="fas fa-asterisk mr-2"></i> <a target="_blank" href="https://www.metalevel.at/prolog" class="font-weight-bold">The Power of Prolog</a> by <span class="font-weight-bold">M. Triska</span></li>
         </ul>
     </div>
 </div>
