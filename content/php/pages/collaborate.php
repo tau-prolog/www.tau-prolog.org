@@ -125,38 +125,19 @@ if( isset($_GET['action']) ) {
     </div>
 </div>
 
-<div class="white container-fluid py-5" id="authors">
-	<div class="container">
-        <h2 class="mb-4">Authors</h2>
-        <div class="row">
-<?php foreach( query_contributors() as $user ) { ?>
-            <div class="col-md-4">
-                <div class="purple card float-left my-2">
-                    <img class="card-img-top" src="<?php echo $user["image"]; ?>" alt="<?php echo $user["complete_name"]; ?>">
-                    <div class="card-body">
-                        <h5 class="purple card-title"><?php echo $user["complete_name"]; ?></h5>
-                        <h6 class="card-subtitle mb-2 text-muted"><?php echo $user["rol"]; ?></h6>
-                        <p class="card-text"><?php echo $user["description"]; ?></p>
-                    </div>
-                    <ul class="purple list-group list-group-flush">
-                        <?php if( $user["url"] ) { ?> <li class="purple list-group-item"><i class="fas fa-link mr-2"></i> <a href="http://<?php echo $user["url"]; ?>" target="_blank"><?php echo $user["url"]; ?></a></li> <?php } ?>
-                        <?php if( $user["github"] ) { ?> <li class="purple list-group-item"><i class="fab fa-github mr-2"></i> <a href="http://github.com/<?php echo $user["github"]; ?>" target="_blank">github.com/<?php echo $user["github"]; ?></a></li> <?php } ?>
-                        <?php if( $user["twitter"] ) { ?> <li class="purple list-group-item"><i class="fab fa-twitter mr-2"></i> <a href="http://twitter.com/<?php echo $user["twitter"]; ?>" target="_blank">twitter.com/<?php echo $user["twitter"]; ?></a></li> <?php } ?>
-                    </ul>
-                </div>
-            </div>
-<?php } ?>
-        </div>
-    </div>
-</div>
-
 <div class="yellow container-fluid py-5" id="contributors">
     <div class="container"> 
+        <h2 class="mb-4">Collaborators</h2>
+        <ul class="list-unstyled">
+            <li class="mb-2 p-2 border"><i class="fas fa-star mr-2"></i> <span class="font-weight-bold">José A. Riaza</span> <span class="font-italic">(creator, lead developer)</span></li>
+            <li class="mb-2 p-2 border"><i class="fas fa-star mr-2"></i> <span class="font-weight-bold">Miguel Riaza</span> <span class="font-italic">(lead developer)</span></li>
+        </ul>
         <h2 class="mb-4">Contributors</h2>
         <ul class="list-unstyled">
             <li class="mb-2 p-2 border"><i class="fas fa-smile mr-2"></i> <span class="font-weight-bold">Anne Ogborn</span> <span class="font-italic">(suggestions)</span></li>
             <li class="mb-2 p-2 border"><i class="fas fa-smile mr-2"></i> <span class="font-weight-bold">Jan Burse</span> <span class="font-italic">(bug reports, feedback)</span></li>
             <li class="mb-2 p-2 border"><i class="fas fa-smile mr-2"></i> <span class="font-weight-bold">Joe Torreggiani</span> <span class="font-italic">(support for npm, testing)</span></li>
+            <li class="mb-2 p-2 border"><i class="fas fa-star mr-2"></i> <span class="font-weight-bold">José M. García</span> <span class="font-italic">(ex-collaborator, documentation, support for npm, community manager)</span></li>
             <li class="mb-2 p-2 border"><i class="fas fa-smile mr-2"></i> <span class="font-weight-bold">Julian Dax</span> <span class="font-italic">(library enhancements)</span></li>
             <li class="mb-2 p-2 border"><i class="fas fa-smile mr-2"></i> <span class="font-weight-bold">Olof Rappestad</span> <span class="font-italic">(support for npm)</span></li>
             <li class="mb-2 p-2 border"><i class="fas fa-smile mr-2"></i> <span class="font-weight-bold">Paulo Moura</span> <span class="font-italic">(library enhancements, suggestions)</span></li>
