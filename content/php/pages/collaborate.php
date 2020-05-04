@@ -125,14 +125,14 @@ if( isset($_GET['action']) ) {
     </div>
 </div>
 
-<div class="yellow container-fluid py-5" id="contributors">
+<div class="yellow container-fluid py-5">
     <div class="container"> 
-        <h2 class="mb-4">Collaborators</h2>
+        <h2 class="mb-4" id="collaborators">Collaborators</h2>
         <ul class="list-unstyled">
             <li class="mb-2 p-2 border"><i class="fas fa-star mr-2"></i> <span class="font-weight-bold">José A. Riaza</span> <span class="font-italic">(creator, lead developer)</span></li>
             <li class="mb-2 p-2 border"><i class="fas fa-star mr-2"></i> <span class="font-weight-bold">Miguel Riaza</span> <span class="font-italic">(lead developer)</span></li>
         </ul>
-        <h2 class="mb-4">Contributors</h2>
+        <h2 class="mb-4" id="contributors">Contributors</h2>
         <ul class="list-unstyled">
             <li class="mb-2 p-2 border"><i class="fas fa-smile mr-2"></i> <span class="font-weight-bold">Anne Ogborn</span> <span class="font-italic">(suggestions)</span></li>
             <li class="mb-2 p-2 border"><i class="fas fa-smile mr-2"></i> <span class="font-weight-bold">Jan Burse</span> <span class="font-italic">(bug reports, feedback)</span></li>
