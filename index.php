@@ -152,7 +152,7 @@ if( $_view != 'custom') {
 							<li><a href="http://tau-prolog.org">Site</a></li>
 							<li><a href="https://twitter.com/tau_prolog" target="_blank">Twitter</a></li>
 							<li><a href="https://github.com/tau-prolog" target="_blank">Github</a></li>
-							<li><a href="https://www.npmjs.com/~tau-prolog" target="_blank">npm</a></li>
+							<li><a href="https://www.npmjs.com/tau-prolog" target="_blank">npm</a></li>
 						</ul>
 					</div>
 					<div class="col-sm">
@@ -176,7 +176,7 @@ if( $_view != 'custom') {
 						<ul class="list-unstyled">
 							<li class="font-weight-bold">Contact</li>
 							<li><a href="http://tau-prolog.org/collaborate#contact">Form contact</a></li>
-							<li><a href="http://tau-prolog.org/collaborate#authors">Authors</a></li>
+							<li><a href="http://tau-prolog.org/collaborate#collaborators">Collaborators</a></li>
 							<li><a href="http://tau-prolog.org/collaborate#contributors">Contributors</a></li>
 							<li><a href="mailto:tau.prolog@gmail.com">tau.prolog @ gmail.com</a></li>
 						</ul>
