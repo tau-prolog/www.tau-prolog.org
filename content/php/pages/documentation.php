@@ -11,13 +11,14 @@ $show = isset($_GET["show"]) && $_GET["show"] == "all";
 </div>
 
 <div class="purple container-fluid py-5" id="manual">
-    <div class="container">
-        <h2 class="mb-4">Get Started with Tau Prolog</h2>
-        <ul class="list-unstyled">
-            <li class="mb-2 p-2 border"><i class="fas fa-book mr-1"></i> <a href="/manual/a-simple-tutorial"><b>A simple tutorial</b></a> <a href="/manual/a-simple-tutorial" class="btn btn-sm ml-2 py-0 float-right">EN</a> <a href="/manual/es/un-tutorial-sencillo" class="btn btn-sm ml-2 py-0 float-right">ES</a></li>
+	<div class="container">
+		<h2 class="mb-4">Get Started with Tau Prolog</h2>
+		<ul class="list-unstyled">
+			<li class="mb-2 p-2 border"><i class="fas fa-book mr-1"></i> <a href="/manual/a-simple-tutorial"><b>A simple tutorial</b></a> <a href="/manual/a-simple-tutorial" class="btn btn-sm ml-2 py-0 float-right">EN</a> <a href="/manual/es/un-tutorial-sencillo" class="btn btn-sm ml-2 py-0 float-right">ES</a></li>
 			<li class="mb-2 p-2 border"><i class="fas fa-book mr-1"></i> <a href="/manual/compatibility-with-nodejs"><b>Compatibility with Node.js</b></a> <a href="/manual/compatibility-with-nodejs" class="btn btn-sm ml-2 py-0 float-right">EN</a> <a href="/manual/es/compatibilidad-con-nodejs" class="btn btn-sm ml-2 py-0 float-right">ES</a></li>
-            <li class="mb-2 p-2 border"><i class="fas fa-book mr-1"></i> <a href="/manual/manipulating-the-dom-with-prolog"><b>Manipulating the DOM with Prolog</b></a> <a href="/manual/manipulating-the-dom-with-prolog" class="btn btn-sm ml-2 py-0 float-right">EN</a> <a href="/manual/es/manipulando-el-dom-con-prolog" class="btn btn-sm ml-2 py-0 float-right">ES</a></li>
-            <li class="p-2 border"><i class="fas fa-book mr-1"></i> <a href="/manual/prototypes-and-prolog-objects"><b>Prototypes and Prolog objects</b></a> <a href="/manual/prototypes-and-prolog-objects" class="btn btn-sm ml-2 py-0 float-right">EN</a> <a href="/manual/es/prototipos-y-objetos-prolog" class="btn btn-sm ml-2 py-0 float-right">ES</a></li>
+			<li class="mb-2 p-2 border"><i class="fas fa-book mr-1"></i> <a href="/manual/manipulating-the-dom-with-prolog"><b>Manipulating the DOM with Prolog</b></a> <a href="/manual/manipulating-the-dom-with-prolog" class="btn btn-sm ml-2 py-0 float-right">EN</a> <a href="/manual/es/manipulando-el-dom-con-prolog" class="btn btn-sm ml-2 py-0 float-right">ES</a></li>
+			<li class="mb-2 p-2 border"><i class="fas fa-book mr-1"></i> <a href="/manual/making-your-own-packages"><b>Making your own packages</b></a> <a href="/manual/making-your-own-packages" class="btn btn-sm ml-2 py-0 float-right">EN</a> <a href="/manual/es/creando-tus-propios-paquetes" class="btn btn-sm ml-2 py-0 float-right">ES</a></li>
+			<li class="p-2 border"><i class="fas fa-book mr-1"></i> <a href="/manual/prototypes-and-prolog-objects"><b>Prototypes and Prolog objects</b></a> <a href="/manual/prototypes-and-prolog-objects" class="btn btn-sm ml-2 py-0 float-right">EN</a> <a href="/manual/es/prototipos-y-objetos-prolog" class="btn btn-sm ml-2 py-0 float-right">ES</a></li>
 		</ul>
 	</div>
 </div>

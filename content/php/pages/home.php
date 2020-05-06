@@ -39,7 +39,7 @@
                 <!--<div class="home-features-icon"><i class="fas fa-ruler"></i></div>-->
                 <h4 class="my-3">ISO Prolog Standard compliance</h4>
                 <p class="text-justify">Tau Prolog development has been directed by the ISO Prolog Standard, designed to promote the applicability and portability of Prolog text and data among several data processing systems.</p>
-                <a href="https://www.iso.org/standard/21413.html" target="_blank" class="btn btn-block">More about ISO Prolog Standard</a>
+                <a href="https://www.iso.org/standard/21413.html" target="_blank" class="btn btn-block">More about ISO Prolog</a>
             </div>
             <div class="col-xl text-center">
                 <!--<div class="home-features-icon"><i class="fab fa-node-js"></i></div>-->
@@ -57,7 +57,7 @@
                 <!--<div class="home-features-icon"><i class="fas fa-sync"></i></div>-->
                 <h4 class="my-3">Asynchronous predicates</h4>
                 <p class="text-justify"> Tau Prolog has been developed following a non-blocking, callback-based approach, allowing you, for instance, to sleep the main thread or to do AJAX requests without blocking the browser.</p>
-                <a href="#" class="btn btn-block">More about asynchrony</a>
+                <a href="/manual/making-your-own-packages#async-predicates" class="btn btn-block">More about asynchrony</a>
             </div>
         </div>
 	</div>
@@ -98,7 +98,7 @@ session.answer(callback); // false.</div>
         <h2 class="mb-4">Who uses Tau Prolog?</h2>
         <div class="row">
     		<div class="col-lg">
-                <a id="home-who-floper" href="http://dectau.uclm.es/floper/" target="_blank" title="FLOPER"></a>
+                <a id="home-who-floper" href="http://dectau.uclm.es/fasill/" target="_blank" title="FLOPER"></a>
                 <p class="text-justify"><b>FLOPER</b> is a logic programming environment for research made up of a set of tools and applications for the FASILL language, a Prolog-like fuzzy logic programming language.</p>
             </div>
             <div class="col-lg">
