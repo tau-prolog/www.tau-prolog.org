@@ -7,7 +7,7 @@
             </div>
             <div class="col-xl pl-3 overflow-hidden">
                 <a id="home-get-started" href="/manual/a-simple-tutorial" class="btn btn-lg float-right">Get started</a>
-                <div id="home-version" class="text-secondary float-right">Version <span id="tau-version"></div></div>
+                <div id="home-version" class="text-secondary float-right">Version <span id="tau-version"></span></div>
             </div>
         </div>
     </div>
