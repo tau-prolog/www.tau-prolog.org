@@ -69,26 +69,29 @@
         <h4 class="mt-4"><i class="fas fa-dice-one"></i> Load the library</h4>
         <div class="look-code">&lt;script src="tau-prolog.js">&lt;/script></div>
 
-        <h4 class="mt-4"><i class="fas fa-dice-two"></i> Consult a program</h4>
-        <div class="look-code">&lt;script id="likes.pl" type="text/prolog">
+        <h4 class="mt-4"><i class="fas fa-dice-two"></i> Create a session</h4>
+        <div class="look-code">var session = pl.create();</div>
+
+        <h4 class="mt-4"><i class="fas fa-dice-three"></i> Consult a program</h4>
+        <div class="look-code">session.consult(`
     likes(sam, salad).
     likes(dean, pie).
     likes(sam, apples).
     likes(dean, whiskey).
-&lt;/script></div>
-        <div class="mt-3 look-code">var session = pl.create();
-session.consult("likes.pl");</div>
+`);</div>
+        <p class="text-center font-weight-bold mb-0">or</p>
+        <div class="mt-3 look-code" style="margin-top:0!important;">session.consult("path/to/src.pl");</div>
 
-        <h4 class="mt-4"><i class="fas fa-dice-three"></i> Query a goal</h4>
+        <h4 class="mt-4"><i class="fas fa-dice-four"></i> Query a goal</h4>
         <div class="look-code">session.query("likes(sam, X).");</div>
 
-        <h4 class="mt-4"><i class="fas fa-dice-four"></i> Look for answers</h4>
+        <h4 class="mt-4"><i class="fas fa-dice-five"></i> Look for answers</h4>
         <div class="look-code">var callback = console.log;
 session.answer(callback); // X = salad ;
 session.answer(callback); // X = apples ;
 session.answer(callback); // false.</div>
 
-        <h4 class="mt-4"><i class="fas fa-dice-five"></i> Enjoy Prolog!</h4>
+        <h4 class="mt-4"><i class="fas fa-dice-six"></i> Enjoy Prolog!</h4>
         <div class="look-code">// is that possible? ...</div>
     </div>
 </div>
