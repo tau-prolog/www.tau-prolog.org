@@ -101,17 +101,25 @@ session.answer(callback); // false.</div>
         <h2 class="mb-4">Who uses Tau Prolog?</h2>
         <div class="row">
     		<div class="col-lg">
-                <a id="home-who-floper" href="http://dectau.uclm.es/fasill/" target="_blank" title="FLOPER"></a>
-                <p class="text-justify"><b>FLOPER</b> is a logic programming environment for research made up of a set of tools and applications for the FASILL language, a Prolog-like fuzzy logic programming language.</p>
-            </div>
-            <div class="col-lg">
-                <a id="home-who-prologhub" href="https://prologhub.pl/" target="_blank" title="PrologHub"></a>
-                <p class="text-justify"><b>PrologHub</b> is dedicated to bringing together the Prolog community to share ideas and knowledge, with the aim of encouraging the growth and development of the community.</p>
+                <a id="home-who-yarn" href="https://yarnpkg.com/features/constraints" target="_blank" title="Yarn 2"></a>
+                <p class="text-justify"><b>Yarn</b> is a package manager for your code. It allows you to use and share code with other developers from around the world. Yarn does this quickly, securely, and reliably.</p>
             </div>
             <div class="col-lg">
                 <a id="home-who-klipse" href="http://blog.klipse.tech/" target="_blank" title="Klipse"></a>
                 <p class="text-justify"><b>Klipse</b> is a JavaScript plugin for embedding interactive code snippets in tech blogs. A simple client-side code evaluator pluggable on any web page.</p>
             </div>
+            <div class="col-lg">
+                <a id="home-who-prologhub" href="https://prologhub.pl/" target="_blank" title="PrologHub"></a>
+                <p class="text-justify"><b>PrologHub</b> is dedicated to bringing together the Prolog community to share ideas and knowledge, with the aim of encouraging the growth and development of the community.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg">
+                <a id="home-who-floper" href="http://dectau.uclm.es/fasill/" target="_blank" title="FLOPER"></a>
+                <p class="text-justify"><b>FLOPER</b> is a logic programming environment for research made up of a set of tools and applications for the FASILL language, a Prolog-like fuzzy logic programming language.</p>
+            </div>
+            <div class="col-lg"></div>
+            <div class="col-lg"></div>
         </div>
 	</div>
 </section>
